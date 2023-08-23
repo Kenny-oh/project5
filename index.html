@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <meta name="description" content="This is my personal website where I am learning how to be a software developer, it includes HTML, Javascrip, CSS/SASS"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.scss">
+</head>
+  <!--bootstrap element for navbar in the header-->
+   <header>
+    <nav class="navbar navbar-expand-lg column-">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="about-us.html">About</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>  
+  </header>
+<body>
+    <section>
+     <!--Text fade in animation with header showing first and text later-->
+     <h1 class="fadein1">Welcome To My Webpage</h1>
+     <p class="fadein2">I am an aspiring Software Developer currently enroled in the Correlation-One's Software Developement Cohort 4 provided by Amazon Career Growth. Each day I am leaning new concepts and working on my craft to bring an asthetically pleasing website that can be tailored to any type.</p>
+      </div>
+    </section>
+        <section>
+       <h1 class="fadein1">About Me</h1>
+       <p class="fadein2">I am a Flow Lead currently enrolled in Correlation-One's Software Development program provided by Amazon's Career Growth Program and am set to complete this program in mid November. I have a passion for technology and wish to enter the field and contribute to its growth and innovations. I am someone who is keen on details and likes to completely break apart something to understand its intrcacies. My next step would be to reproduce the steps in its creation and set the instructions to a simple procedure for other people to follow and re-create. </p><br>
+          <!--Flex box and advaced grid to keep items in middle with cards-->
+     <div class="hero-container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="image1.jpg" class="card-img-top">
+            <div class="card-body d-grid gap-2">
+              <h5 class="mt-4 mb-4 card-title">Skillset</h5>
+              <p class="card-text">Possess a wide variety of skills from keen eye for details to collaboration in large groups for upcoming projects. Can read more about my skills on my resume below.</p>
+              <!--resume refference page with download section for pdf-->
+              <a href="resume.html" type="button" class="btn btn-primary mt-4 mb-4">View Resume</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="image2.jpg" class="card-img-top">
+            <div class="card-body d-grid gap-2">
+              <h5 class="mt-4 mb-4 card-title">Refferences</h5>
+              <p class="card-text">Listed below are a number of individuals to contact for refferencing my work experience ranging from project managers to Amazon leaders.</p>
+              <!--refference page with refferences and their contact information, currently at +3-->
+              <a href="refference.html" type="button" class="btn btn-primary mt-4 mb-4" disabled>Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="image3.jpg" class="card-img-top">
+            <div class="card-body d-grid gap-2">
+              <h5 class="mt-4 mb-4 card-title">Education</h5>
+              <p class="card-text">I have a Bachelor of Arts Degree in Business Administration from Arizona State University and I am also enrolled in Correlation-One: Software Development program.</p>
+              <!--Link to Correlation One training for skills and programs taught-->
+              <a href="https://www.correlation-one.com/amazon-software-development" type="button" class="btn btn-primary mt-4 mb-4" target="_blank">Visit Their Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+        
+      </section>
+        <section>
+       <h1>Contact</h1>
+       <p>Can reach out to me at Kenny.Oh@Outlook.com</p>
+          <a href="www.linkedin.com/in/kenny-oh1">Linkedin</a>
+           <ul class="newsletter">
+            <label for="name">Name: </lable><br>
+            <input type="text" id="name"><br>
+            <lable for="email">Email Address: </lable><br>
+            <input type="text" id="email"><br><br>
+            <textarea id="content" name="content" rows="4" cols="45">
+</textarea><br><br>
+  <input type="submit" value="Submit">
+</form>
+          </li><br>
+        </ul>
+      </section>
+   <footer class="center">
+    <div>
+      <p>&copy; 2023 Kenny Oh. All rights reserved.</p>
+    </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
