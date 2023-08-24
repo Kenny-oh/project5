@@ -1,0 +1,93 @@
+body, header, footer {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 15vw 20vw;
+    margin: 0;
+}
+
+li:hover {
+  background-color: grey;
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.curve {
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.fadein1 {
+  animation: fadein 1s;
+}
+
+.fadein2 {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  0% { opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.hero-container {
+  display: grid;
+}
+
+.hero-container > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+.featured-articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+ 
+.article-cards {
+  min-height: calc(100vh - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.column-c {
+  min-height: 20rem;
+  max-width: 23rem;
+}
+ 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+ 
+#img1, #img2, #img3 {
+  height: 228.42px;
+}
+
+/*max width for phone screens or tablets*/
+/*phone 480px tablet 768px desktop 1280px*/
+@media only screen and (max-width: 768px) {
+  [class*="column-"] {
+    width: 100%;
+  }
+}
